@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>مكتبة الكتب الإلكترونية</title>
+</head>
+<body>
+    <header>
+        <h1>مكتبة الكتب الإلكترونية</h1>
+    </header>
+
+    <section id="admin-section">
+        <h2>لوحة التحكم للمشرفين</h2>
+        <!-- إضافة كتاب -->
+        <form>
+            <label for="bookTitle">عنوان الكتاب:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">إضافة الكتاب</button>
+        </form>
+    </section>
+
+    <section id="user-section">
+        <h2>مستخدمين عاديين</h2>
+        <!-- عرض الكتب وتحميلها -->
+        <div class="book">
+            <h3>عنوان الكتاب</h3>
+            <button>تحميل</button>
+        </div>
+
+        <div class="book">
+            <h3>عنوان الكتاب الآخر</h3>
+            <button>تحميل</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 مكتبة الكتب الإلكترونية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
