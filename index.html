@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ZZXX</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">المكتبة الرقمية</a>
+        <ul class="menu cf">
+           
+            <li>
+                <a>الكتب</a>
+                <ul class="submenu">
+                    <li><a href="email.php">رفع</a></li>
+                    <li><a href="mailto:stay2255@gmail.com">طلب ازالة </a></li>
+                    <li><a href=mailto:stay2255@gmail.com>تبديل كتاب</a></li>
+                </ul>   
+                      
+
+        </ul>
+    
+    </header>
+
+    <script>
+    var modal = document.getElementById('id01');
+    
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <section class="main">
+        <div>
+            <h2>مرحبا<br><span>المكتبة الرقمية</span></h2>
+            <h3>(7)الاصدار التجريبي</h3>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="db.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">تسجيل الدخول</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          
+        </div>
+            <div class="social-icons">
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">!<a href="signup.php">ليس لدي حساب</a></span>
+              </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    <h3>توفر الكتب</h3>
+                    <p>24ساعة</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <div class="info">
+                    <h3>الكتب</h3>
+                    <p>PDFصيغة </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <div class="info">
+                    <h3>الامكانيات</h3>
+                    <p>امكانية التعديل والمشاركة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/none.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">NONE</p>
+                    <strong class="project-title">
+                        <span>NONE</span>
+                        <a href="#" class="more-details"></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/none.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">NONE</p>
+                    <strong class="project-title">
+                        <span>NONE</span>
+                        <a href="#" class="more-details"></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/none.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">NONE</p>
+                    <strong class="project-title">
+                        <span>NONE</span>
+                        <a href="#" class="more-details"></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/none.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">NONE</p>
+                    <strong class="project-title">
+                        <span>NONE</span>
+                        <a href="#" class="more-details"></a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">support phone</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                    <a href="https://wa.me/qr/BUQL7XWVMO7WK1" class="icons">Whatsapp</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                    <p>For Eduction</p>
+                </div>
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                    <a href="#" class="icons" ></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-snapchat-ghost" ></i>
+                </div>
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                    <a href="https://www.snapchat.com/add/omarkik9?share_id=7JhgiY1V_Zw&locale=en-SA" class="icons">snapchat</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>ZZXX</span></p>
+        <div class="social-icons">
+                <a href="https://www.snapchat.com/add/omarkik9?share_id=7JhgiY1V_Zw&locale=en-SA"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="https://wa.me/qr/BUQL7XWVMO7WK1"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html> 
+

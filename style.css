@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Menu Dropdown */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.menu,
+.submenu {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.menu {   
+ margin: 0px auto;
+ width: 800px;   
+ width: -moz-fit-content;
+ width: -webkit-fit-content;
+ width: fit-content; 
+}
+
+.menu > li {
+ background: #34495e;
+ float: left;
+ position:flex;
+ transform: skewX(25deg);
+}
+
+.menu a {
+ display: block;
+ color: #fff;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-family: Arial, Helvetica;
+ font-size: 11px;
+}  
+
+.menu li:hover {
+ background: #e74c3c;
+}  
+
+.menu > li > a {
+ transform: skewX(-25deg);
+ padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+ position: absolute;
+ width: 200px;
+ left: 50%; margin-left: -100px;
+ transform: skewX(-25deg);
+ transform-origin: left top;
+}
+
+.submenu li {
+ background-color: #34495e;
+ position:flex;
+ overflow: hidden;  
+}      
+
+.submenu > li > a {
+ padding: 1em 2em;   
+}
+
+.submenu > li::after {
+ content: '';
+ position: absolute;
+ top: -125%;
+ height: 100%;
+ width: 100%;   
+ box-shadow: 0 0 50px rgba(0, 0, 0, .9);   
+}  
+
+.submenu > li:nth-child(odd){
+ transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+ transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+ right: -50%;
+ transform: skewX(-25deg) rotate(3deg);
+}    
+
+.submenu > li:nth-child(even){
+ transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+ transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+ left: -50%;
+ transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+ opacity: 0;
+ visibility: hidden;   
+}
+
+.submenu li {
+ transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+ opacity: 1;
+ visibility: visible;
+}  
+
+.menu > li:hover .submenu li:nth-child(even){
+ transform: skewX(25deg) translateX(15px);   
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+ transform: skewX(-25deg) translateX(-15px);   
+}
+.time{
+    background-color:rgba(250, 250, 250, 0.24);
+    font-size:small;
+    right: 444px;
+}
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #0011ff;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 200%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: rgb(248, 248, 248);
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #000016b6;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+.lo0 {
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpeg) no-repeat;
+}
+ /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(180, 175, 175);
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+        color: #fff;
+        background-color: #3a6cf4;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0.9375em 2.1875em;
+        letter-spacing: 1px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        transition: 0.7s ease;
+    }
+    
+    button:hover {
+      opacity: 0.6;
+      background-color: #0a49f6;
+      transform: scale(1.1);
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.9s;
+      animation: animatezoom 0.9s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
